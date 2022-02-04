@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+// キーカラーとアクセントカラー
+$color-base: #5B4A23;
+$color-btn: #109972;
+$color-bg: #F2ECDD;
+
+// フォント
+$font: "brandon-grotesque", "source-han-sans-japanese", sans-serif;;
+
+// フォント太さ
+$fw-l: 300;
+$fw-m: 500;
+$fw-b: 900;
+
+// 行間
+$line-h-base: 1.5;
+$line-h-writing: 2;
+
+// 文字間
+$letter-s-base: .08em;
+$letter-s-title: .14em;
+$letter-s-en: .05em;
+
+// ドロップシャドウ
+$shadow: 0 3px 5px rgba(0, 0, 0, .16);
+
+// ホバー変化の秒数
+$hover-transitgion: .5s;
+$hover-opacity: .65;
+
+html {
+  color: $color-base;
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  font-family: $font;
+  letter-spacing: $letter-s-base;
+  line-height: $line-h-base;
+  line-break: strict;
+  font-feature-settings: 'palt'1; // 自動文字詰め
+}
+
+footer {
+  height: 38px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: $color-btn;
+  small {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+}
