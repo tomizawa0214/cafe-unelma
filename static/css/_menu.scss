@@ -137,7 +137,7 @@
               width: 40px;
               height: 2px;
               background-color: #fff;
-              animation: arrowlong01 2s ease infinite;
+              animation: arrowlong03 2s ease infinite;
             }
             &::after {
               content: "";
@@ -149,9 +149,9 @@
               border-bottom: 2px solid #fff;
               border-right: 2px solid #fff;
               transform: skew(45deg);
-              animation: arrowlong02 2s ease infinite;
+              animation: arrowlong04 2s ease infinite;
             }
-            @keyframes arrowlong01{
+            @keyframes arrowlong03{
               0% {
                 width: 0;
                 opacity: 0
@@ -169,7 +169,7 @@
                 opacity: 0
               }
             }
-            @keyframes arrowlong02{
+            @keyframes arrowlong04{
               0% {
                 left: 180px;
                 opacity: 0
