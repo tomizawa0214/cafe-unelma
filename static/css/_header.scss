@@ -20,8 +20,8 @@
             display: block;
             width: 0;
             bottom: 0;
-            border-bottom: solid 2px #fff;
-            transition: $hover-transitgion;
+            border-bottom: solid 2px $color-white;
+            transition: $hover-transition;
           }
           &::before {
             left: 50%;
@@ -35,7 +35,7 @@
           }
         }
         &.current {
-          border-bottom: 2px solid #fff;
+          border-bottom: 2px solid $color-white;
           a {
             &:hover::before,
             &:hover::after {
@@ -49,15 +49,15 @@
         a {
           display: inline-block;
           padding: 0 0 8px;
-          color: #fff;
+          color: $color-white;
           font-size: 1.6rem;
-          transition: $hover-transitgion;
+          transition: $hover-transition;
           svg {
             display: block;
             margin: 0 auto 8px;
             height: 30px;
-            fill: #fff;
-            transition: $hover-transitgion;
+            fill: $color-white;
+            transition: $hover-transition;
           }
           &:hover {
             opacity: $hover-opacity;
@@ -67,7 +67,7 @@
     }
   }
   &__nav {
-    background-color: #fff;
+    background-color: $color-white;
     ul {
       li {
         &.current-fixed {
@@ -115,7 +115,7 @@
         left: 50%;
         width: 100%;
         max-width: 1080px;
-        color: #fff;
+        color: $color-white;
         font-size: 4rem;
         font-weight: $fw-l;
         letter-spacing: $letter-s-title;
@@ -135,7 +135,7 @@
           padding: 15px 20px;
           width: 280px;
           height: 60px;
-          background-color: #fff;
+          background-color: $color-white;
           border-radius: 10px;
           p {
             color: $color-base;

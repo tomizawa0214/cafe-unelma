@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 9999;
-  animation: byeShutter 2s ease-in-out forwards;
+  animation: byeShutter 2.4s ease-in-out forwards;
   @keyframes byeShutter {
     60% {
       opacity: 1;
@@ -40,8 +40,8 @@
     background-color: $color-bg;
     border-radius: 100%;
     transform: translate(-50%, -50%) scale(1.4);
-    animation: logo 1.8s ease-in-out forwards;
-    animation-delay: .4s;
+    animation: logo 1.4s ease-in-out forwards;
+    animation-delay: 1s;
     @keyframes logo {
       0% {
         opacity: 1;
@@ -73,7 +73,7 @@
     background-color: $color-bg;
     border-radius: 100%;
     box-shadow: $shadow;
-    transition: $hover-transitgion;
+    transition: $hover-transition;
     &:hover {
       opacity: $hover-opacity;
     }
@@ -95,7 +95,7 @@
       height: 100%;
       li {
         &:first-of-type {
-          border-bottom: 2px solid #fff;
+          border-bottom: 2px solid $color-white;
         }
         &:not(:first-of-type) {
           a {
@@ -107,8 +107,8 @@
               display: block;
               width: 0;
               bottom: 0;
-              border-bottom: solid 2px #fff;
-              transition: $hover-transitgion;
+              border-bottom: solid 2px $color-white;
+              transition: $hover-transition;
             }
             &::before {
               left: 50%;
@@ -128,15 +128,15 @@
         a {
           display: inline-block;
           padding: 0 0 8px;
-          color: #fff;
+          color: $color-white;
           font-size: 1.6rem;
-          transition: $hover-transitgion;
+          transition: $hover-transition;
           svg {
             display: block;
             margin: 0 auto 8px;
             height: 30px;
-            fill: #fff;
-            transition: $hover-transitgion;
+            fill: $color-white;
+            transition: $hover-transition;
           }
           &:hover {
             opacity: $hover-opacity;
@@ -160,7 +160,7 @@
       position: absolute;
       bottom: 65px;
       left: 30px;
-      color: #fff;
+      color: $color-white;
       font-size: 4rem;
       font-weight: $fw-l;
       letter-spacing: $letter-s-title;
@@ -177,7 +177,7 @@
         padding: 15px 20px;
         width: 280px;
         height: 60px;
-        background-color: #fff;
+        background-color: $color-white;
         border-radius: 10px;
         p {
           color: $color-base;
@@ -211,9 +211,9 @@
           color: $color-btn;
           font-size: 1.6rem;
           font-weight: $fw-m;
-          transition: $hover-transitgion;
+          transition: $hover-transition;
           letter-spacing: $letter-s-en;
-          background-color: #fff;
+          background-color: $color-white;
           border-radius: 0 10px 0 10px;
           box-shadow: $shadow;
           &:hover {

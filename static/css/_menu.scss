@@ -15,7 +15,7 @@
       a {
         color: $color-btn;
         text-decoration: underline;
-        transition: $hover-transitgion;
+        transition: $hover-transition;
         &::after {
           content: "";
           display: inline-block;
@@ -98,8 +98,8 @@
           padding: 20px;
           color: $color-btn;
           font-size: 1.8rem;
-          background-color: #fff;
-          transition: $hover-transitgion;
+          background-color: $color-white;
+          transition: $hover-transition;
           border-radius: 0 10px 0 10px;
           box-shadow: $shadow;
           svg {
@@ -125,10 +125,10 @@
         }
         &:last-of-type {
           a {
-            color: #fff;
+            color: $color-white;
             background-color: $color-btn;
             svg {
-              fill: #fff;
+              fill: $color-white;
             }
             &::before {
               content: "";
@@ -136,7 +136,7 @@
               left: 185px;
               width: 40px;
               height: 2px;
-              background-color: #fff;
+              background-color: $color-white;
               animation: arrowlong03 2s ease infinite;
             }
             &::after {
@@ -146,8 +146,8 @@
               top: calc(50% - 8px);
               width: 2px;
               height: 8px;
-              border-bottom: 2px solid #fff;
-              border-right: 2px solid #fff;
+              border-bottom: 2px solid $color-white;
+              border-right: 2px solid $color-white;
               transform: skew(45deg);
               animation: arrowlong04 2s ease infinite;
             }
@@ -199,7 +199,7 @@
       &--wrap {
         &--inner {
           display: block;
-          transition: $hover-transitgion;
+          transition: $hover-transition;
           &--img {
             position: relative;
             padding: 100% 0 0;
@@ -267,7 +267,7 @@
             width: 80%;
             max-width: 744px;
             transform: translate(-50%, -50%);
-            background-color: #fff;
+            background-color: $color-white;
             border-radius: 20px;
             overflow-y: auto;
             &--img {

@@ -4,6 +4,7 @@
 $color-base: #5B4A23;
 $color-btn: #109972;
 $color-bg: #F2ECDD;
+$color-white: #FFF;
 
 // フォント
 $font: "brandon-grotesque", "source-han-sans-japanese", sans-serif;;
@@ -29,7 +30,7 @@ $letter-s-en: .05em;
 $shadow: 0 3px 5px rgba(0, 0, 0, .16);
 
 // ホバー変化の秒数
-$hover-transitgion: .5s;
+$hover-transition: .5s;
 $hover-opacity: .65;
 
 html {
@@ -57,7 +58,7 @@ footer {
   text-align: center;
   background-color: $color-btn;
   small {
-    color: #fff;
+    color: $color-white;
     font-size: 1.2rem;
   }
 }
