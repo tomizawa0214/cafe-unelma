@@ -256,23 +256,23 @@
     </article>
   </main>
   <footer>
-    <small>&copy;2022 cafe unelma</small>
+    <small>&copy;<span class="copy-year"></span> cafe unelma</small>
   </footer>
 
   <script>
-    'use strict';
+    'use strict'
 
     // Gナビの現在ページを指定
-    $('.header-fix > nav > ul > li:nth-of-type(2)').addClass('current current-fixed');
+    $('.header-fix > nav > ul > li:nth-of-type(2)').addClass('current current-fixed')
 
     // 追従ヘッダーのCSS変更
     $(window).scroll(function () {
       if ($(window).scrollTop() > 80) {
-        $('.header-fix > nav').addClass('header-fix__nav');
+        $('.header-fix > nav').addClass('header-fix__nav')
       } else {
-        $('.header-fix > nav').removeClass('header-fix__nav');
+        $('.header-fix > nav').removeClass('header-fix__nav')
       }
-    });
+    })
   </script>
 </body>
 

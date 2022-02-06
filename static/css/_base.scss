@@ -13,6 +13,9 @@ $fw-l: 300;
 $fw-m: 500;
 $fw-b: 700;
 
+// フォントスタイル
+$fs: italic;
+
 // 行間
 $line-h-base: 1.5;
 $line-h-writing: 2;
@@ -24,7 +27,6 @@ $letter-s-en: .05em;
 
 // ドロップシャドウ
 $shadow: 0 3px 5px rgba(0, 0, 0, .16);
-$shadow-bg: 0 5px 10px rgba(0, 0, 0, .16);
 
 // ホバー変化の秒数
 $hover-transitgion: .5s;

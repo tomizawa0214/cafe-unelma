@@ -353,14 +353,21 @@
     </div>
   </main>
   <footer>
-    <small>&copy;2022 cafe unelma</small>
+    <small>&copy;<span class="copy-year"></span> cafe unelma</small>
   </footer>
 
   <script>
-    'use strict';
+    'use strict'
 
+    // コピーライトの年を設定（共通）
     $(document).ready(function () {
-      // MVのスライダー
+      let d = new Date();
+      let year = d.getFullYear()
+      $('.copy-year').append(year)
+    })
+
+    // MVのスライダー
+    $(document).ready(function () {
       $('.mv-slider').slick({
         infinite: true,
         slidesToShow: 1,
@@ -378,14 +385,14 @@
     $(window).on('load', function () {
       function mvHeight() {
         let menuHeight = $('.menu-slider__item').innerHeight()
-        let windowHeight = $(window).height();
+        let windowHeight = $(window).height()
         $('.mv-slider__img').css('height', windowHeight - menuHeight - 38 + 'px')
       }
       mvHeight()
       $(window).resize(function () {
         mvHeight()
       })
-    });
+    })
   </script>
 </body>
 
