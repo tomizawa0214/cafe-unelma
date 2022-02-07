@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+// メインコンテンツ
+.lower {
+  background-color: $color-bg;
+  background-image: url("../img/illust_bg.png");
+  background-size: 100%;
+  overflow: hidden;
+  &__breadcrumbs-pc {
+    display: flex;
+    max-width: 1080px;
+    margin: 20px auto 50px;
+    li {
+      font-size: 1.2rem;
+      a {
+        color: $color-btn;
+        text-decoration: underline;
+        transition: $hover-transition;
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          margin: 0 12px;
+          border-top: 2px solid $color-base;
+          border-right: 2px solid $color-base;
+          transform: rotate(45deg);
+        }
+        &:hover {
+          opacity: $hover-opacity;
+        }
+      }
+    }
+  }
+  &__contact {
+    position: relative;
+    padding: 40px 0;
+    margin: 0 auto 72px;
+    max-width: 1080px;
+    background: rgba(255, 255, 255, 0.75);
+    &::before {
+      content: url(../img/illust_masking01.png);
+      display: inline-block;
+      position: absolute;
+      top: -45px;
+      left: -47px;
+      z-index: 100;
+    }
+    &::after {
+      content: url(../img/illust_masking02.png);
+      display: inline-block;
+      position: absolute;
+      top: -45px;
+      right: -96px;
+      z-index: 100;
+    }
+    &--title {
+      margin: 0 0 40px;
+      padding: 0 20px;
+      text-align: center;
+      font-size: 4rem;
+      font-weight: $fw-m;
+      letter-spacing: $letter-s-en;
+      line-height: 1;
+      svg {
+        display: block;
+        margin: 0 auto 20px;
+        height: 40px;
+      }
+    }
+    &--form {
+      padding: 0 20px;
+      &--heading {
+        margin: 40px 0;
+        text-align: center;
+        font-size: 1.4rem;
+      }
+      &--content {
+        margin: 0 auto;
+        max-width: 540px;
+        dt {
+          margin: 20px 0 5px;
+          font-size: 1.4rem;
+        }
+        dd {
+          display: flex;
+          input[type="text"],
+          input[type="email"] {
+            padding: 8px 10px;
+            width: 100%;
+            height: 42px;
+            font-size: 1.6rem;
+            letter-spacing: $letter-s-base;
+            background-color: $color-white;
+            border-radius: 4px;
+            border: 1px solid #CED4DA;
+            cursor: text;
+          }
+          textarea {
+            padding: 8px 10px;
+            width: 100%;
+            font-size: 1.6rem;
+            letter-spacing: $letter-s-base;
+            background-color: $color-white;
+            border-radius: 4px;
+            border: 1px solid #CED4DA;
+            cursor: text;
+          }
+        }
+      }
+      &--check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+        font-size: 1.4rem;
+        input[type="checkbox"] {
+          display: block;
+          width: 20px;
+          height: 20px;
+          background-color: $color-white;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        a {
+          margin: 0 0 0 10px;
+          text-decoration: underline;
+          color: $color-btn;
+          transition: $hover-transition;
+          &:hover {
+            opacity: $hover-opacity;
+          }
+        }
+      }
+      &--submit {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        padding: 20px;
+        width: 245px;
+        height: 60px;
+        color: $color-white;
+        font-size: 1.6rem;
+        background-color: $color-btn;
+        border-radius: 0 10px 0 10px;
+        box-shadow: $shadow;
+        transition: $hover-transition;
+        svg {
+          display: block;
+          margin: 0 16px 0 0;
+          height: 20px;
+          fill: $color-white;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          right: 20px;
+          display: inline-block;
+          width: 40px;
+          height: 8px;
+          border-bottom: 2px solid $color-white;
+          border-right: 2px solid $color-white;
+          transform: skew(45deg);
+        }
+        &:hover {
+          opacity: $hover-opacity;
+        }
+      }
+    }
+  }
+}

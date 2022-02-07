@@ -3327,4 +3327,219 @@ footer small {
   width: 100%;
   height: 100%;
 }
+
+.lower {
+  background-color: #F2ECDD;
+  background-image: url("../img/illust_bg.png");
+  background-size: 100%;
+  overflow: hidden;
+}
+
+.lower__breadcrumbs-pc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1080px;
+  margin: 20px auto 50px;
+}
+
+.lower__breadcrumbs-pc li {
+  font-size: 1.2rem;
+}
+
+.lower__breadcrumbs-pc li a {
+  color: #109972;
+  text-decoration: underline;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.lower__breadcrumbs-pc li a::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 12px;
+  border-top: 2px solid #5B4A23;
+  border-right: 2px solid #5B4A23;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.lower__breadcrumbs-pc li a:hover {
+  opacity: 0.65;
+}
+
+.lower__contact {
+  position: relative;
+  padding: 40px 0;
+  margin: 0 auto 72px;
+  max-width: 1080px;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.lower__contact::before {
+  content: url(../img/illust_masking01.png);
+  display: inline-block;
+  position: absolute;
+  top: -45px;
+  left: -47px;
+  z-index: 100;
+}
+
+.lower__contact::after {
+  content: url(../img/illust_masking02.png);
+  display: inline-block;
+  position: absolute;
+  top: -45px;
+  right: -96px;
+  z-index: 100;
+}
+
+.lower__contact--title {
+  margin: 0 0 40px;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.lower__contact--title svg {
+  display: block;
+  margin: 0 auto 20px;
+  height: 40px;
+}
+
+.lower__contact--form {
+  padding: 0 20px;
+}
+
+.lower__contact--form--heading {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.lower__contact--form--content {
+  margin: 0 auto;
+  max-width: 540px;
+}
+
+.lower__contact--form--content dt {
+  margin: 20px 0 5px;
+  font-size: 1.4rem;
+}
+
+.lower__contact--form--content dd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lower__contact--form--content dd input[type="text"],
+.lower__contact--form--content dd input[type="email"] {
+  padding: 8px 10px;
+  width: 100%;
+  height: 42px;
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+  background-color: #FFF;
+  border-radius: 4px;
+  border: 1px solid #CED4DA;
+  cursor: text;
+}
+
+.lower__contact--form--content dd textarea {
+  padding: 8px 10px;
+  width: 100%;
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+  background-color: #FFF;
+  border-radius: 4px;
+  border: 1px solid #CED4DA;
+  cursor: text;
+}
+
+.lower__contact--form--check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0;
+  font-size: 1.4rem;
+}
+
+.lower__contact--form--check input[type="checkbox"] {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #FFF;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.lower__contact--form--check a {
+  margin: 0 0 0 10px;
+  text-decoration: underline;
+  color: #109972;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.lower__contact--form--check a:hover {
+  opacity: 0.65;
+}
+
+.lower__contact--form--submit {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  width: 245px;
+  height: 60px;
+  color: #FFF;
+  font-size: 1.6rem;
+  background-color: #109972;
+  border-radius: 0 10px 0 10px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.lower__contact--form--submit svg {
+  display: block;
+  margin: 0 16px 0 0;
+  height: 20px;
+  fill: #FFF;
+}
+
+.lower__contact--form--submit::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  display: inline-block;
+  width: 40px;
+  height: 8px;
+  border-bottom: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+  -webkit-transform: skew(45deg);
+          transform: skew(45deg);
+}
+
+.lower__contact--form--submit:hover {
+  opacity: 0.65;
+}
 /*# sourceMappingURL=style.css.map */
