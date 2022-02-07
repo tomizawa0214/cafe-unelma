@@ -1238,7 +1238,7 @@ footer small {
 
 .lower__news--title svg {
   display: block;
-  margin: 0 auto 10px;
+  margin: 0 auto 20px;
   height: 40px;
 }
 
@@ -1414,7 +1414,7 @@ footer small {
 
 .lower__menu--title svg {
   display: block;
-  margin: 0 auto 10px;
+  margin: 0 auto 20px;
   height: 40px;
 }
 
@@ -1960,21 +1960,8 @@ footer small {
 
 .lower__takeout--title svg {
   display: block;
-  margin: 0 auto 10px;
+  margin: 0 auto 20px;
   height: 40px;
-}
-
-.lower__takeout--title time {
-  display: block;
-  margin: 20px 0 20px;
-  font-size: 1.4rem;
-}
-
-.lower__takeout--title--txt {
-  margin: 10px 0 0;
-  font-size: 2.8rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
 }
 
 .lower__takeout--header {
@@ -2021,6 +2008,7 @@ footer small {
   text-align: center;
   color: #FFF;
   font-size: 1.6rem;
+  line-height: 2;
 }
 
 .lower__takeout--step--title {
@@ -2689,7 +2677,7 @@ footer small {
   opacity: 0.65;
 }
 
-.thanks__takeout {
+.thanks__wrap {
   position: relative;
   padding: 40px 20px;
   margin: 0 auto 72px;
@@ -2697,7 +2685,7 @@ footer small {
   background: rgba(255, 255, 255, 0.75);
 }
 
-.thanks__takeout::before {
+.thanks__wrap::before {
   content: url(../img/illust_masking01.png);
   display: inline-block;
   position: absolute;
@@ -2706,7 +2694,7 @@ footer small {
   z-index: 100;
 }
 
-.thanks__takeout::after {
+.thanks__wrap::after {
   content: url(../img/illust_masking02.png);
   display: inline-block;
   position: absolute;
@@ -2715,22 +2703,22 @@ footer small {
   z-index: 100;
 }
 
-.thanks__takeout--logo {
+.thanks__wrap--logo {
   text-align: center;
   margin: 0 auto 40px;
 }
 
-.thanks__takeout--content {
+.thanks__wrap--content {
   padding: 0 20px;
 }
 
-.thanks__takeout--content svg {
+.thanks__wrap--content svg {
   display: block;
   margin: 0 auto 30px;
   height: 40px;
 }
 
-.thanks__takeout--content--title {
+.thanks__wrap--content--title {
   text-align: center;
   font-size: 2.8rem;
   font-weight: 500;
@@ -2738,30 +2726,30 @@ footer small {
   line-height: 1;
 }
 
-.thanks__takeout--content--txt {
+.thanks__wrap--content--txt {
   margin: 20px 0 40px;
   text-align: center;
   font-size: 1.4rem;
   line-height: 2;
 }
 
-.thanks__takeout--content--help {
+.thanks__wrap--content--help {
   margin: 40px auto;
   max-width: 450px;
 }
 
-.thanks__takeout--content--help li {
+.thanks__wrap--content--help li {
   padding-left: 1em;
   text-indent: -1em;
   font-size: 1.2rem;
   line-height: 1.5;
 }
 
-.thanks__takeout--content--help li:before {
+.thanks__wrap--content--help li:before {
   content: "※";
 }
 
-.thanks__takeout--content--btn {
+.thanks__wrap--content--btn {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2783,14 +2771,14 @@ footer small {
   transition: 0.5s;
 }
 
-.thanks__takeout--content--btn svg {
+.thanks__wrap--content--btn svg {
   display: block;
   margin: 0 16px 0 0;
   height: 20px;
   fill: #109972;
 }
 
-.thanks__takeout--content--btn::after {
+.thanks__wrap--content--btn::after {
   content: "";
   position: absolute;
   right: 20px;
@@ -2803,7 +2791,7 @@ footer small {
           transform: skew(45deg);
 }
 
-.thanks__takeout--content--btn:hover {
+.thanks__wrap--content--btn:hover {
   opacity: 0.65;
 }
 
@@ -2812,3 +2800,437 @@ footer small {
   width: 100%;
   bottom: 0;
 }
+
+.lower {
+  background-color: #F2ECDD;
+  background-image: url("../img/illust_bg.png");
+  background-size: 100%;
+  overflow: hidden;
+}
+
+.lower__breadcrumbs-pc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1080px;
+  margin: 20px auto 50px;
+}
+
+.lower__breadcrumbs-pc li {
+  font-size: 1.2rem;
+}
+
+.lower__breadcrumbs-pc li a {
+  color: #109972;
+  text-decoration: underline;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.lower__breadcrumbs-pc li a::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 12px;
+  border-top: 2px solid #5B4A23;
+  border-right: 2px solid #5B4A23;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.lower__breadcrumbs-pc li a:hover {
+  opacity: 0.65;
+}
+
+.lower__reservation {
+  position: relative;
+  padding: 40px 0;
+  margin: 0 auto 72px;
+  max-width: 1080px;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.lower__reservation::before {
+  content: url(../img/illust_masking01.png);
+  display: inline-block;
+  position: absolute;
+  top: -45px;
+  left: -47px;
+  z-index: 100;
+}
+
+.lower__reservation::after {
+  content: url(../img/illust_masking02.png);
+  display: inline-block;
+  position: absolute;
+  top: -45px;
+  right: -96px;
+  z-index: 100;
+}
+
+.lower__reservation--title {
+  margin: 0 0 40px;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.lower__reservation--title svg {
+  display: block;
+  margin: 0 auto 20px;
+  height: 40px;
+}
+
+.lower__reservation--header {
+  position: relative;
+  margin: 0 0 40px;
+  padding: 40px 20px;
+  width: 100%;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url(../img/mv_001.jpg);
+}
+
+.lower__reservation--header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.lower__reservation--header--title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.lower__reservation--header--title h2 {
+  margin: 0 0 20px;
+  text-align: center;
+  color: #FFF;
+  font-size: 2.8rem;
+  letter-spacing: 0.14em;
+}
+
+.lower__reservation--header--title p {
+  text-align: center;
+  color: #FFF;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.lower__reservation--form {
+  padding: 0 20px;
+}
+
+.lower__reservation--form--heading {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.lower__reservation--form--contact {
+  margin: 0 auto;
+  max-width: 540px;
+}
+
+.lower__reservation--form--contact dt {
+  margin: 20px 0 5px;
+  font-size: 1.4rem;
+}
+
+.lower__reservation--form--contact--radio {
+  margin: 10px 0 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+}
+
+.lower__reservation--form--contact--radio input[type="radio"] {
+  margin: 0 8px 0 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFF;
+  border: 1px solid #ff0000;
+  cursor: pointer;
+}
+
+.lower__reservation--form--contact--radio label {
+  margin: 0 30px 0 0;
+}
+
+.lower__reservation--form--contact dd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lower__reservation--form--contact dd input[type="text"],
+.lower__reservation--form--contact dd input[type="email"],
+.lower__reservation--form--contact dd input[type="tel"] {
+  padding: 8px 10px;
+  width: 100%;
+  height: 42px;
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+  background-color: #FFF;
+  border-radius: 4px;
+  border: 1px solid #CED4DA;
+  cursor: text;
+}
+
+.lower__reservation--form--contact dd div {
+  position: relative;
+}
+
+.lower__reservation--form--contact dd div select {
+  padding: 8px 10px;
+  width: 100%;
+  height: 42px;
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+  background-color: #FFF;
+  border-radius: 4px;
+  border: 1px solid #CED4DA;
+  cursor: pointer;
+}
+
+.lower__reservation--form--contact dd div:first-of-type {
+  margin: 0 20px 0 0;
+  width: 65%;
+}
+
+.lower__reservation--form--contact dd div:last-of-type {
+  width: 35%;
+}
+
+.lower__reservation--form--contact dd div::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  right: 20px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #5B4A23;
+  border-right: 2px solid #5B4A23;
+  -webkit-transform: translateY(-50%) rotate(135deg);
+          transform: translateY(-50%) rotate(135deg);
+  pointer-events: none;
+}
+
+.lower__reservation--form--order {
+  margin: 20px auto 0;
+  padding: 0 20px 20px;
+  max-width: 540px;
+  background-color: #FFF;
+}
+
+.lower__reservation--form--order p {
+  margin: 0 -20px;
+  padding: 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: #F2ECDD;
+}
+
+.lower__reservation--form--order dl:not(:last-of-type) {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+  border-bottom: 1px solid rgba(91, 74, 35, 0.3);
+}
+
+.lower__reservation--form--order dl:not(:last-of-type) dt {
+  margin: 0 20px 0 0;
+  width: 48%;
+}
+
+.lower__reservation--form--order dl:not(:last-of-type) dd:first-of-type {
+  margin: 0 20px 0 0;
+  width: 12%;
+  text-align: right;
+}
+
+.lower__reservation--form--order dl:not(:last-of-type) dd:last-of-type {
+  margin: 0 20px 0 0;
+  width: 20%;
+  text-align: right;
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+.lower__reservation--form--order dl:not(:last-of-type) dd:last-of-type span {
+  margin: 0 4px 0 0;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.lower__reservation--form--order dl:not(:last-of-type) div {
+  width: 20%;
+}
+
+.lower__reservation--form--order dl:not(:last-of-type) div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 42px;
+  color: #FFF;
+  font-size: 1.6rem;
+  background-color: #109972;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.lower__reservation--form--order dl:not(:last-of-type) div a:hover {
+  opacity: 0.65;
+}
+
+.lower__reservation--form--order dl:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 30px;
+  padding: 0 20px;
+}
+
+.lower__reservation--form--order dl:last-of-type dt {
+  font-size: 1.4rem;
+}
+
+.lower__reservation--form--order dl:last-of-type dd {
+  margin: 0 0 0 20px;
+  font-size: 2.8rem;
+  font-style: italic;
+}
+
+.lower__reservation--form--order dl:last-of-type dd span {
+  margin: 0 4px 0 0;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.lower__reservation--form--order ul li {
+  padding-left: 1em;
+  text-indent: -1em;
+  font-size: 1.2rem;
+}
+
+.lower__reservation--form--order ul li::before {
+  content: "※";
+}
+
+.lower__reservation--form--check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0;
+  font-size: 1.4rem;
+}
+
+.lower__reservation--form--check input[type="checkbox"] {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #FFF;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.lower__reservation--form--check a {
+  margin: 0 0 0 10px;
+  text-decoration: underline;
+  color: #109972;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.lower__reservation--form--check a:hover {
+  opacity: 0.65;
+}
+
+.lower__reservation--form--submit {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  width: 245px;
+  height: 60px;
+  color: #FFF;
+  font-size: 1.6rem;
+  background-color: #109972;
+  border-radius: 0 10px 0 10px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.lower__reservation--form--submit svg {
+  display: block;
+  margin: 0 16px 0 0;
+  height: 20px;
+  fill: #FFF;
+}
+
+.lower__reservation--form--submit::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  display: inline-block;
+  width: 40px;
+  height: 8px;
+  border-bottom: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+  -webkit-transform: skew(45deg);
+          transform: skew(45deg);
+}
+
+.lower__reservation--form--submit:hover {
+  opacity: 0.65;
+}
+/*# sourceMappingURL=style.css.map */
