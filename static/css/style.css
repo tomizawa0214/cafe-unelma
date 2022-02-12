@@ -438,6 +438,12 @@ footer small {
   font-size: 1.2rem;
 }
 
+body {
+  visibility: hidden;
+  -webkit-transition: 0.65;
+  transition: 0.65;
+}
+
 .shutter {
   position: fixed;
   width: 100%;
@@ -451,8 +457,8 @@ footer small {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 9999;
-  -webkit-animation: byeShutter 2.4s ease-in-out forwards;
-          animation: byeShutter 2.4s ease-in-out forwards;
+  -webkit-animation: byeShutter 3.2s ease-in-out forwards;
+          animation: byeShutter 3.2s ease-in-out forwards;
 }
 
 @-webkit-keyframes byeShutter {
@@ -498,12 +504,12 @@ footer small {
           transform: translate(-50%, -50%) scale(1.4);
   -webkit-animation: logo 1.4s ease-in-out forwards;
           animation: logo 1.4s ease-in-out forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
 }
 
 @-webkit-keyframes logo {
-  0% {
+  20% {
     opacity: 1;
   }
   40% {
@@ -519,7 +525,7 @@ footer small {
 }
 
 @keyframes logo {
-  0% {
+  20% {
     opacity: 1;
   }
   40% {

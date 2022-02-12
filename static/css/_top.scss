@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+body {
+  visibility: hidden;
+  transition: $hover-opacity;
+}
+
 // opening-animation
 .shutter{
   position: fixed;
@@ -14,7 +19,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 9999;
-  animation: byeShutter 2.4s ease-in-out forwards;
+  animation: byeShutter 3.2s ease-in-out forwards;
   @keyframes byeShutter {
     60% {
       opacity: 1;
@@ -39,9 +44,9 @@
     border-radius: 100%;
     transform: translate(-50%, -50%) scale(1.4);
     animation: logo 1.4s ease-in-out forwards;
-    animation-delay: 1s;
+    animation-delay: 1.8s;
     @keyframes logo {
-      0% {
+      20% {
         opacity: 1;
       }
       40% {  
