@@ -59,11 +59,11 @@
 </head>
 
 <body>
-  <!-- <div class="shutter">
+  <div class="shutter">
     <div class="shutter__logo">
       <img src="static/img/cafe-unelma_logo.svg" alt="cafe unelma -カフェウネルマ-" class="shutter__logo--img"/>
     </div>
-  </div> -->
+  </div>
   <div class="logo">
     <a href="/">
       <img src="static/img/cafe-unelma_logo.svg" alt="cafe unelma -カフェウネルマ-">
@@ -382,19 +382,19 @@
     })
 
     // MVのスライダー
-    // $(document).ready(function () {
-    //   $('.header__mv-slider').slick({
-    //     infinite: true,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     arrows: false,
-    //     fade: true,
-    //     speed: 2000,
-    //     autoplaySpeed: 3000,
-    //     autoplay: true,
-    //     dots: true,
-    //   })
-    // })
+    $(document).ready(function () {
+      $('.header__mv-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        speed: 2000,
+        autoplaySpeed: 3000,
+        autoplay: true,
+        dots: true,
+      })
+    })
 
     // MVのスライダー高さを設定
     $(window).on('load', function () {

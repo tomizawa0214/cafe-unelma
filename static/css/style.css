@@ -1048,6 +1048,7 @@ body::-webkit-scrollbar {
   }
   .header__wrap--nav {
     height: 100%;
+    overflow: hidden;
   }
   .header__wrap--nav--left {
     position: absolute;
