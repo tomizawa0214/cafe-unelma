@@ -59,11 +59,11 @@
 </head>
 
 <body>
-  <div class="shutter">
+  <!-- <div class="shutter">
     <div class="shutter__logo">
       <img src="static/img/cafe-unelma_logo.svg" alt="cafe unelma -カフェウネルマ-" class="shutter__logo--img"/>
     </div>
-  </div>
+  </div> -->
   <div class="logo">
     <a href="/">
       <img src="static/img/cafe-unelma_logo.svg" alt="cafe unelma -カフェウネルマ-">
@@ -382,19 +382,19 @@
     })
 
     // MVのスライダー
-    $(document).ready(function () {
-      $('.header__mv-slider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        speed: 2000,
-        autoplaySpeed: 3000,
-        autoplay: true,
-        dots: true,
-      })
-    })
+    // $(document).ready(function () {
+    //   $('.header__mv-slider').slick({
+    //     infinite: true,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     arrows: false,
+    //     fade: true,
+    //     speed: 2000,
+    //     autoplaySpeed: 3000,
+    //     autoplay: true,
+    //     dots: true,
+    //   })
+    // })
 
     // MVのスライダー高さを設定
     $(window).on('load', function () {
@@ -420,7 +420,7 @@
       let position = $('.header__wrap--nav > ul').scrollLeft()
       let speed = 500
       let windowWidth = $(window).width()
-      let scrollMax = 630 - windowWidth - 80
+      let scrollMax = 630 - windowWidth + 80
       $('.header__wrap--nav > ul').animate({
         scrollLeft: position + 200
       }, speed, 'swing')
@@ -448,6 +448,34 @@
 
       if (0 >= position - 200) {
         $('.header__wrap--nav--left--btn').css({
+          'opacity': 0,
+          'cursor': 'default',
+        })
+      }
+    })
+
+    // headerのスクロール
+    $('.header__wrap--nav > ul').on('scroll', function () {
+      $('.header__wrap--nav--left--btn').css({
+        'opacity': 1,
+        'cursor': 'pointer',
+      })
+      $('.header__wrap--nav--right--btn').css({
+        'opacity': 1,
+        'cursor': 'pointer',
+      })
+
+      let position = $(this).scrollLeft()
+      let windowWidth = $(window).width()
+      let scrollMax = 630 - windowWidth + 80
+
+      if (!position) {
+        $('.header__wrap--nav--left--btn').css({
+          'opacity': 0,
+          'cursor': 'default',
+        })
+      } else if (scrollMax == position) {
+        $('.header__wrap--nav--right--btn').css({
           'opacity': 0,
           'cursor': 'default',
         })
