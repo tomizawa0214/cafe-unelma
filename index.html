@@ -368,7 +368,7 @@
     </div>
   </main>
   <footer>
-    <small>&copy;<span class="copy-year"></span> cafe unelma</small>
+    <small>&copy;<span class="copy-year"></span> unelma</small>
   </footer>
 
   <script>
@@ -425,8 +425,9 @@
       $('.header__wrap--nav > ul').animate({
         scrollLeft: position + 200
       }, speed, 'swing')
-
+      
       if (scrollMax < position + 200) {
+        $('body').prepend('<h2>' + 'ここに来ました' + '</h2>');
         $('.header__wrap--nav--right--btn').css({
           'opacity': 0,
           'cursor': 'default',
