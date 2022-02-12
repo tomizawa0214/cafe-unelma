@@ -440,15 +440,14 @@ body {
           left: 0;
           width: 40px;
           height: 100%;
+          opacity: 0;
           transform: translateY(-50%);
           z-index: 9999;
           &--btn {
             position: absolute;
-            opacity: 0;
             left: 0;
             width: 40px;
             height: 100%;
-            transition: $hover-transition;
             z-index: 9999;
             cursor: pointer;
             &::after {
@@ -473,11 +472,9 @@ body {
           z-index: 9999;
           &--btn {
             position: absolute;
-            opacity: 1;
             right: 0;
             width: 40px;
             height: 100%;
-            transition: $hover-transition;
             z-index: 9999;
             cursor: pointer;
             &::after {

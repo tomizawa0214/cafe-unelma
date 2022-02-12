@@ -413,9 +413,8 @@
 
     // headerのSP右スクロール
     $('.header__wrap--nav--right--btn').on('click', function () {
-      $('.header__wrap--nav--left--btn').css({
-        'opacity': 1,
-        'cursor': 'pointer',
+      $('.header__wrap--nav--left').css({
+        'opacity': 1
       })
       let position = $('.header__wrap--nav > ul').scrollLeft()
       let speed = 500
@@ -426,18 +425,16 @@
       }, speed, 'swing')
       
       if (scrollMax < position + 200) {
-        $('.header__wrap--nav--right--btn').css({
-          'opacity': 0,
-          // 'cursor': 'default',
+        $('.header__wrap--nav--right').css({
+          'opacity': 0
         })
       }
     })
 
     // headerのSP左スクロール
     $('.header__wrap--nav--left--btn').on('click', function () {
-      $('.header__wrap--nav--right--btn').css({
-        'opacity': 1,
-        'cursor': 'pointer',
+      $('.header__wrap--nav--right').css({
+        'opacity': 1
       })
       let position = $('.header__wrap--nav > ul').scrollLeft()
       let speed = 500
@@ -446,22 +443,19 @@
       }, speed, 'swing')
 
       if (0 >= position - 200) {
-        $('.header__wrap--nav--left--btn').css({
-          'opacity': 0,
-          'cursor': 'default',
+        $('.header__wrap--nav--left').css({
+          'opacity': 0
         })
       }
     })
 
     // headerのスクロール
     $('.header__wrap--nav > ul').on('scroll', function () {
-      $('.header__wrap--nav--left--btn').css({
-        'opacity': 1,
-        'cursor': 'pointer',
+      $('.header__wrap--nav--left').css({
+        'opacity': 1
       })
-      $('.header__wrap--nav--right--btn').css({
-        'opacity': 1,
-        'cursor': 'pointer',
+      $('.header__wrap--nav--right').css({
+        'opacity': 1
       })
 
       let position = $(this).scrollLeft()
@@ -469,14 +463,12 @@
       let scrollMax = 630 - windowWidth + 80
 
       if (!position) {
-        $('.header__wrap--nav--left--btn').css({
-          'opacity': 0,
-          'cursor': 'default',
+        $('.header__wrap--nav--left').css({
+          'opacity': 0
         })
       } else if (scrollMax == position) {
-        $('.header__wrap--nav--right--btn').css({
-          'opacity': 0,
-          'cursor': 'default',
+        $('.header__wrap--nav--right').css({
+          'opacity': 0
         })
       }
     })
