@@ -420,13 +420,12 @@
       let position = $('.header__wrap--nav > ul').scrollLeft()
       let speed = 500
       let windowWidth = $(window).width()
-      let scrollMax = 630 - windowWidth + 80
+      let scrollMax = 570 - windowWidth + 180
       $('.header__wrap--nav > ul').animate({
         scrollLeft: position + 200
       }, speed, 'swing')
 
       if (scrollMax < position + 200) {
-        console.log("ここに来た！")
         $('.header__wrap--nav--right--btn').css({
           'opacity': 0,
           'cursor': 'default',
@@ -467,7 +466,7 @@
 
       let position = $(this).scrollLeft()
       let windowWidth = $(window).width()
-      let scrollMax = 630 - windowWidth + 80
+      let scrollMax = 570 - windowWidth + 180
 
       if (!position) {
         $('.header__wrap--nav--left--btn').css({
