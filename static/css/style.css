@@ -442,14 +442,6 @@ body {
   visibility: hidden;
   -webkit-transition: 0.65;
   transition: 0.65;
-  overflow-y: hidden;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
-}
-
-body::-webkit-scrollbar {
-  display: none;
 }
 
 .shutter {

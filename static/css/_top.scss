@@ -3,13 +3,6 @@
 body {
   visibility: hidden;
   transition: $hover-opacity;
-  overflow-y: hidden;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
-  &::-webkit-scrollbar{
-    display: none;
-  }
 }
 
 // opening-animation
