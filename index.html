@@ -68,7 +68,7 @@
     </a>
   </div>
   <header class="header">
-    <nav>
+    <nav class="header__nav">
       <ul>
         <li>
           <a href="/">
@@ -156,6 +156,10 @@
           </a>
         </li>
       </ul>
+      <div class="header__nav--btn">
+        <button class="header__nav--btn--left"></button>
+        <button class="header__nav--btn--right"></button>
+      </div>
     </nav>
     <div class="mv-slider">
       <section class="mv-slider__img mv-slider__img01">
@@ -397,6 +401,48 @@
       $(window).resize(function () {
         mvHeight()
       })
+    })
+
+    // headerのSP右スクロール
+    $('.header__nav--btn--right').on('click', function () {
+      $('.header__nav--btn--left').css({
+        'opacity': 1,
+        'cursor': 'pointer',
+      })
+      let position = $('.header__nav > ul').scrollLeft()
+      let speed = 500
+      let windowWidth = $(window).width()
+      $('.header__nav > ul').animate({
+        scrollLeft: position + 200
+      }, speed, 'swing')
+
+      if (windowWidth - 200 < position) {
+        $('.header__nav--btn--right').css({
+          'opacity': 0,
+          'cursor': 'default',
+        })
+      }
+    })
+
+    // headerのSP左スクロール
+    $('.header__nav--btn--left').on('click', function () {
+      $('.header__nav--btn--right').css({
+        'opacity': 1,
+        'cursor': 'pointer',
+      })
+      let position = $('.header__nav > ul').scrollLeft()
+      let speed = 500
+      let windowWidth = $(window).width()
+      $('.header__nav > ul').animate({
+        scrollLeft: position - 200
+      }, speed, 'swing')
+
+      if (position < 200) {
+        $('.header__nav--btn--left').css({
+          'opacity': 0,
+          'cursor': 'default',
+        })
+      }
     })
   </script>
 </body>
