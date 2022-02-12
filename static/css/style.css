@@ -439,6 +439,7 @@ footer small {
 }
 
 body {
+  position: fixed;
   visibility: hidden;
   -webkit-transition: 0.65;
   transition: 0.65;
@@ -1122,7 +1123,7 @@ body {
     bottom: 1%;
   }
   .menu-slider__item {
-    width: calc(100vw / 3);
+    width: calc(100vw / 5);
   }
   .menu-slider__item figcaption {
     padding: 20px;
