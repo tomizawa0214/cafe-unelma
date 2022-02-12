@@ -368,7 +368,7 @@
     </div>
   </main>
   <footer>
-    <small>&copy;<span class="copy-year"></span> unelma</small>
+    <small>&copy;<span class="copy-year"></span> cafe unelma</small>
   </footer>
 
   <script>
@@ -420,14 +420,12 @@
       let position = $('.header__wrap--nav > ul').scrollLeft()
       let speed = 500
       let windowWidth = $(window).width()
-      $('body').prepend('<h2>' + position + '</h2>');
       let scrollMax = 630 - windowWidth + 80
       $('.header__wrap--nav > ul').animate({
         scrollLeft: position + 200
       }, speed, 'swing')
       
       if (scrollMax < position + 200) {
-        $('body').prepend('<h2>' + 'ここに来ました' + '</h2>');
         $('.header__wrap--nav--right--btn').css({
           'opacity': 0,
           'cursor': 'default',
