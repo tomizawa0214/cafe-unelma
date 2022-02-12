@@ -8,7 +8,7 @@
   overflow: hidden;
   &__breadcrumbs-pc {
     display: flex;
-    max-width: 1080px;
+    max-width: calc(100% -40px);
     margin: 20px auto 50px;
     li {
       font-size: 1.2rem;
@@ -183,6 +183,23 @@
     iframe {
       width: 100%;
       height: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  // メインコンテンツ
+  .lower {
+    &__breadcrumbs-pc {
+      max-width: 1080px;
+      li {
+        a {
+          transition: $hover-transition;
+          &:hover {
+            opacity: $hover-opacity;
+          }
+        }
+      }
     }
   }
 }

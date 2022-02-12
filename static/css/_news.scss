@@ -2,50 +2,21 @@
 
 // メインコンテンツ
 .lower {
-  background-color: $color-bg;
-  background-image: url(../img/illust_bg.png);
-  background-size: 100%;
-  overflow: hidden;
-  &__breadcrumbs-pc {
-    display: flex;
-    max-width: 1080px;
-    margin: 20px auto 50px;
-    li {
-      font-size: 1.2rem;
-      a {
-        color: $color-btn;
-        text-decoration: underline;
-        transition: $hover-transition;
-        &::after {
-          content: "";
-          display: inline-block;
-          width: 6px;
-          height: 6px;
-          margin: 0 12px;
-          border-top: 2px solid $color-base;
-          border-right: 2px solid $color-base;
-          transform: rotate(45deg);
-        }
-        &:hover {
-          opacity: $hover-opacity;
-        }
-      }
-    }
-  }
   &__news {
     position: relative;
     padding: 40px 20px;
     margin: 0 auto 72px;
+    width: calc(100% - 40px);
     max-width: 1080px;
     background: rgba(255, 255, 255, .75);
     &::before {
       content: "";
       display: inline-block;
       position: absolute;
-      top: -45px;
-      left: -47px;
-      width: 300px;
-      height: 200px;
+      top: -25px;
+      left: -50px;
+      width: 160px;
+      height: 110px;
       background-repeat: no-repeat;
       background-size: cover;
       background-image: url(../img/illust_masking01.png);
@@ -55,10 +26,10 @@
       content: "";
       display: inline-block;
       position: absolute;
-      top: -45px;
-      right: -96px;
-      width: 300px;
-      height: 200px;
+      top: -25px;
+      right: -50px;
+      width: 160px;
+      height: 110px;
       background-repeat: no-repeat;
       background-size: cover;
       background-image: url(../img/illust_masking02.png);
@@ -67,35 +38,34 @@
     &--title {
       margin: 0 0 40px;
       text-align: center;
-      font-size: 4rem;
+      font-size: 2.2rem;
       font-weight: $fw-m;
       letter-spacing: $letter-s-en;
-      line-height: 1;
+      line-height: $line-h-base;
       svg {
         display: block;
-        margin: 0 auto 20px;
-        height: 40px;
+        margin: 0 auto 10px;
+        height: 30px;
       }
       time {
         display: block;
         margin: 20px 0 20px;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
       }
       &--txt {
         margin: 10px 0 0;
-        font-size: 2.8rem;
+        font-size: 1.8rem;
         font-weight: $fw-b;
         letter-spacing: $letter-s-base;
       }
     }
     &--col {
       display: grid;
-      gap: 40px;
-      grid-template-columns: repeat(3, minmax(100px, 320px));
+      gap: 20px;
+      grid-template-columns: repeat(2, minmax(100px, 320px));
       &--wrap {
         a {
           display: block;
-          transition: $hover-transition;
           div {
             position: relative;
             padding: 100% 0 0;
@@ -119,9 +89,6 @@
           h2 {
             font-size: 1.4rem;
           }
-          &:hover {
-            opacity: $hover-opacity;
-          }
         }
       }
     }
@@ -131,7 +98,7 @@
       &--img {
         background-color: $color-white;
         margin: 0 auto 40px;
-        padding: 30px;
+        padding: 20px;
         border: 1px solid $color-bg;
         border-radius: 20px;
         &--wrap {
@@ -150,6 +117,68 @@
       &--txt {
         font-size: 1.4rem;
         line-height: $line-h-writing;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  // メインコンテンツ
+  .lower {
+    &__news {
+      &::before {
+        top: -45px;
+        left: -50px;
+        width: 300px;
+        height: 200px;
+      }
+      &::after {
+        content: "";
+        top: -45px;
+        right: -50px;
+        width: 300px;
+        height: 200px;
+      }
+      &--title {
+        font-size: 4rem;
+        line-height: 1;
+        svg {
+          margin: 0 auto 20px;
+          height: 40px;
+        }
+        time {
+          font-size: 1.4rem;
+        }
+        &--txt {
+          font-size: 2.8rem;
+        }
+      }
+      &--col {
+        gap: 40px;
+        grid-template-columns: repeat(3, minmax(100px, 320px));
+      }
+      &--body {
+        &--img {
+          padding: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  // メインコンテンツ
+  .lower {
+    &__news {
+      &--col {
+        &--wrap {
+          a {
+            transition: $hover-transition;
+            &:hover {
+              opacity: $hover-opacity;
+            }
+          }
+        }
       }
     }
   }

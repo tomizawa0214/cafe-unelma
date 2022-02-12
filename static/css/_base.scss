@@ -52,6 +52,40 @@ body {
   font-feature-settings: 'palt'1; // 自動文字詰め
 }
 
+// パンくずと背景
+.lower {
+  background-color: $color-bg;
+  background-image: url(../img/illust_bg.png);
+  background-size: 100%;
+  overflow: hidden;
+  &__breadcrumbs-pc {
+    display: flex;
+    width: calc(100% - 40px);
+    max-width: 1080px;
+    margin: 20px auto 50px;
+    li {
+      font-size: 1.2rem;
+      a {
+        color: $color-btn;
+        text-decoration: underline;
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          margin: 0 12px;
+          border-top: 2px solid $color-base;
+          border-right: 2px solid $color-base;
+          transform: rotate(45deg);
+        }
+      }
+      &:not(:last-of-type) {
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
 footer {
   height: 38px;
   padding: 10px 0;
@@ -60,5 +94,22 @@ footer {
   small {
     color: $color-white;
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  // メインコンテンツ
+  .lower {
+    &__breadcrumbs-pc {
+      max-width: 1080px;
+      li {
+        a {
+          transition: $hover-transition;
+          &:hover {
+            opacity: $hover-opacity;
+          }
+        }
+      }
+    }
   }
 }
