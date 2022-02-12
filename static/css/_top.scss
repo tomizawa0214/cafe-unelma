@@ -3,6 +3,7 @@
 body {
   visibility: hidden;
   transition: $hover-opacity;
+  overflow-y: hidden;
 }
 
 // opening-animation
