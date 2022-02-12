@@ -275,7 +275,7 @@
     // Gナビの現在ページを指定
     $('.header-fix > .header-fix__wrap > .header-fix__wrap--nav > ul > li:nth-of-type(2)').addClass('current current-fixed')
 
-    // 追従ヘッダーのCSS変更（下層ページ共通）
+    // 追従ヘッダーのCSS変更（下層サンクスページ以外は共通）
     $(window).scroll(function () {
       if ($(window).scrollTop() > 80) {
         $('.logo').css('z-index', 1)
@@ -294,7 +294,7 @@
       }
     })
 
-    // headerのSP右スクロール（下層ページ共通）
+    // headerのSP右スクロール（下層サンクスページ以外は共通）
     $('.header-fix__wrap--nav--right--btn').on('click', function () {
       $('.header-fix__wrap--nav--left--btn').css({
         'opacity': 1,
@@ -320,7 +320,7 @@
       }
     })
 
-    // headerのSP左スクロール（下層ページ共通）
+    // headerのSP左スクロール（下層サンクスページ以外は共通）
     $('.header-fix__wrap--nav--left--btn').on('click', function () {
       $('.header-fix__wrap--nav--right--btn').css({
         'opacity': 1,
@@ -340,7 +340,7 @@
       }
     })
 
-    // headerのスクロール（下層ページ共通）
+    // headerのスクロール（下層サンクスページ以外は共通）
     $('.header-fix__wrap--nav > ul').on('scroll', function () {
       $('.header-fix__wrap--nav--left--btn').css({
         'opacity': 1,

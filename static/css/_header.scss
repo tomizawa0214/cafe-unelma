@@ -156,12 +156,6 @@
             svg {
               fill: $color-base !important;
             }
-            &:hover {
-              svg {
-                fill: $color-btn !important;
-              }
-              color: $color-btn !important;
-            }
             &::before,
             &::after {
               border-bottom: solid 2px $color-btn !important;

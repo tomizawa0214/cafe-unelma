@@ -1376,14 +1376,6 @@ footer small {
   fill: #5B4A23 !important;
 }
 
-.header-fix__wrap--nav-fixed ul li a:hover {
-  color: #109972 !important;
-}
-
-.header-fix__wrap--nav-fixed ul li a:hover svg {
-  fill: #109972 !important;
-}
-
 .header-fix__wrap--nav-fixed ul li a::before, .header-fix__wrap--nav-fixed ul li a::after {
   border-bottom: solid 2px #109972 !important;
 }
@@ -2869,112 +2861,179 @@ footer small {
 }
 
 .body-thanks {
-  padding: 100px 0 38px;
+  padding: 85px 0 38px;
   background-color: #F2ECDD;
   background-image: url(../img/illust_bg.png);
   background-size: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
-.header-thanks nav {
+.header-thanks {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  height: 100px;
+  height: 85px;
+  z-index: 10;
+}
+
+.header-thanks__wrap {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 85px;
+  z-index: 9;
+}
+
+.header-thanks__wrap--nav {
+  height: 100%;
+  overflow: hidden;
+  background-color: #FFF;
   -webkit-transition: .7s;
   transition: .7s;
-  z-index: 999;
-  background-color: #FFF;
+  z-index: 9998;
 }
 
-.header-thanks nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.header-thanks__wrap--nav--left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 40px;
   height: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 9999;
 }
 
-.header-thanks nav ul li.current-fixed {
+.header-thanks__wrap--nav--left--btn {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  z-index: 9999;
+  cursor: default;
+}
+
+.header-thanks__wrap--nav--left--btn::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #5B4A23;
+  border-right: 2px solid #5B4A23;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+.header-thanks__wrap--nav--right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 9999;
+}
+
+.header-thanks__wrap--nav--right--btn {
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.header-thanks__wrap--nav--right--btn::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #5B4A23;
+  border-right: 2px solid #5B4A23;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header-thanks__wrap--nav ul {
+  padding: 10px 0 50px;
+  margin: 0 40px;
+  width: calc(100% - 80px);
+  height: auto;
+  text-align: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header-thanks__wrap--nav ul li {
+  display: inline-block;
+}
+
+.header-thanks__wrap--nav ul li.current-fixed {
   border-bottom: 2px solid #109972;
 }
 
-.header-thanks nav ul li.current-fixed a {
+.header-thanks__wrap--nav ul li.current-fixed a {
   color: #109972;
 }
 
-.header-thanks nav ul li.current-fixed a svg {
+.header-thanks__wrap--nav ul li.current-fixed a svg {
   fill: #109972;
 }
 
-.header-thanks nav ul li a {
+.header-thanks__wrap--nav ul li a {
   position: relative;
+  display: inline-block;
 }
 
-.header-thanks nav ul li a::before, .header-thanks nav ul li a::after {
+.header-thanks__wrap--nav ul li a::before, .header-thanks__wrap--nav ul li a::after {
   content: "";
   position: absolute;
   display: block;
   width: 0;
   bottom: 0;
   border-bottom: solid 2px #109972;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
-.header-thanks nav ul li a::before {
+.header-thanks__wrap--nav ul li a::before {
   left: 50%;
 }
 
-.header-thanks nav ul li a::after {
+.header-thanks__wrap--nav ul li a::after {
   right: 50%;
 }
 
-.header-thanks nav ul li a:hover::before, .header-thanks nav ul li a:hover::after {
-  width: 50%;
-}
-
-.header-thanks nav ul li.current {
+.header-thanks__wrap--nav ul li.current {
   border-bottom: 2px solid #109972;
 }
 
-.header-thanks nav ul li.current a:hover::before, .header-thanks nav ul li.current a:hover::after {
+.header-thanks__wrap--nav ul li.current a:hover::before, .header-thanks__wrap--nav ul li.current a:hover::after {
   width: 0;
 }
 
-.header-thanks nav ul li:not(:last-of-type) {
-  margin: 0 30px 0 0;
+.header-thanks__wrap--nav ul li:not(:last-of-type) {
+  margin: 0 20px 0 0;
 }
 
-.header-thanks nav ul li a {
+.header-thanks__wrap--nav ul li a {
   display: inline-block;
-  padding: 0 0 8px;
+  padding: 0 0 4px;
   color: #5B4A23;
-  font-size: 1.6rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  font-size: 1.4rem;
 }
 
-.header-thanks nav ul li a svg {
+.header-thanks__wrap--nav ul li a svg {
   display: block;
   margin: 0 auto 8px;
   height: 30px;
   fill: #5B4A23;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.header-thanks nav ul li a:hover {
-  color: #109972;
-}
-
-.header-thanks nav ul li a:hover svg {
-  fill: #109972;
 }
 
 .thanks__breadcrumbs-pc {
@@ -3144,6 +3203,57 @@ footer small {
   position: absolute;
   width: 100%;
   bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .header-thanks__wrap--nav--right--btn {
+    opacity: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .body-thanks {
+    padding: 90px 0 38px;
+  }
+  .header-thanks {
+    height: 90px;
+  }
+  .header-thanks__wrap {
+    height: 90px;
+  }
+  .header-thanks__wrap--nav ul {
+    padding: 10px 0 50px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .header-thanks__wrap--nav ul li a::before, .header-thanks__wrap--nav ul li a::after {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .header-thanks__wrap--nav ul li a:hover::before, .header-thanks__wrap--nav ul li a:hover::after {
+    width: 50%;
+  }
+  .header-thanks__wrap--nav ul li.current a:hover::before, .header-thanks__wrap--nav ul li.current a:hover::after {
+    width: 0;
+  }
+  .header-thanks__wrap--nav ul li:not(:last-of-type) {
+    margin: 0 30px 0 0;
+  }
+  .header-thanks__wrap--nav ul li a {
+    font-size: 1.6rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .header-thanks__wrap--nav ul li a svg {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .header-thanks__wrap--nav ul li a:hover {
+    color: #109972;
+  }
+  .header-thanks__wrap--nav ul li a:hover svg {
+    fill: #109972;
+  }
 }
 
 .lower__reservation {
