@@ -32,8 +32,8 @@
             margin: 0 auto;
             width: 12px;
             height: 12px;
-            border-top: 2px solid $color-white;
-            border-right: 2px solid $color-white;
+            border-top: 3px solid $color-white;
+            border-right: 3px solid $color-white;
             transform: rotate(225deg);
           }
         }
@@ -59,8 +59,8 @@
             margin: 0 auto;
             width: 12px;
             height: 12px;
-            border-top: 2px solid $color-white;
-            border-right: 2px solid $color-white;
+            border-top: 3px solid $color-white;
+            border-right: 3px solid $color-white;
             transform: rotate(45deg);
           }
         }
@@ -123,16 +123,16 @@
         left: 0;
         &--btn {
           &::after {
-            border-top: 2px solid $color-base;
-            border-right: 2px solid $color-base;
+            border-top: 3px solid $color-base;
+            border-right: 3px solid $color-base;
           }
         }
       }
       &--right {
         &--btn {
           &::after {
-            border-top: 2px solid $color-base;
-            border-right: 2px solid $color-base;
+            border-top: 3px solid $color-base;
+            border-right: 3px solid $color-base;
           }
         }
       }

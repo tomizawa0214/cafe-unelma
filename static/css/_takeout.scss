@@ -269,8 +269,8 @@
                 right: 38px;
                 width: 8px;
                 height: 8px;
-                border-top: 2px solid $color-base;
-                border-right: 2px solid $color-base;
+                border-top: 3px solid $color-base;
+                border-right: 3px solid $color-base;
                 transform: translateY(-50%) rotate(135deg);
                 pointer-events: none;
               }
@@ -333,8 +333,8 @@
               right: 20px;
               width: 8px;
               height: 8px;
-              border-top: 2px solid $color-base;
-              border-right: 2px solid $color-base;
+              border-top: 3px solid $color-base;
+              border-right: 3px solid $color-base;
               transform: translateY(-50%) rotate(135deg);
               pointer-events: none;
             }
@@ -485,8 +485,8 @@
           display: inline-block;
           width: 40px;
           height: 8px;
-          border-bottom: 2px solid $color-white;
-          border-right: 2px solid $color-white;
+          border-bottom: 3px solid $color-white;
+          border-right: 3px solid $color-white;
           transform: skew(45deg);
         }
         &:hover {
