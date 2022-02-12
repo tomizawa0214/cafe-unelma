@@ -188,6 +188,7 @@
           letter-spacing: $letter-s-en;
         }
         &--sns {
+          height: 100%;
           a {
             display: inline-block;
             width: 30px;
@@ -491,7 +492,7 @@
       &--caption {
         bottom: 40px;
         left: 20px;
-        font-size: 2.8rem;
+        font-size: 2.4rem;
         h1, h2 {
           rt {
             font-size: 1rem;
