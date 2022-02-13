@@ -58,6 +58,7 @@ body {
   background-image: url(../img/illust_bg.png);
   background-size: 100%;
   overflow: hidden;
+  z-index: 1;
   &__breadcrumbs-pc {
     display: flex;
     width: calc(100% - 40px);
