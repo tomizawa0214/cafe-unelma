@@ -6,16 +6,17 @@
     position: relative;
     padding: 40px 0;
     margin: 0 auto 72px;
+    width: calc(100% - 40px);
     max-width: 1080px;
     background: rgba(255, 255, 255, 0.75);
     &::before {
       content: "";
       display: inline-block;
       position: absolute;
-      top: -45px;
-      left: -47px;
-      width: 300px;
-      height: 200px;
+      top: -25px;
+      left: -50px;
+      width: 160px;
+      height: 110px;
       background-repeat: no-repeat;
       background-size: cover;
       background-image: url(../img/illust_masking01.png);
@@ -25,10 +26,10 @@
       content: "";
       display: inline-block;
       position: absolute;
-      top: -45px;
-      right: -96px;
-      width: 300px;
-      height: 200px;
+      top: -25px;
+      right: -50px;
+      width: 160px;
+      height: 110px;
       background-repeat: no-repeat;
       background-size: cover;
       background-image: url(../img/illust_masking02.png);
@@ -36,16 +37,15 @@
     }
     &--title {
       margin: 0 0 40px;
-      padding: 0 20px;
       text-align: center;
-      font-size: 4rem;
+      font-size: 2.2rem;
       font-weight: $fw-m;
       letter-spacing: $letter-s-en;
       line-height: 1;
       svg {
         display: block;
-        margin: 0 auto 20px;
-        height: 40px;
+        margin: 0 auto 10px;
+        height: 30px;
       }
     }
     &--header {
@@ -68,6 +68,7 @@
         background: rgba(0, 0, 0, .5)
       }
       &--title {
+        padding: 0 20px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -78,13 +79,13 @@
           margin: 0 0 20px;
           text-align: center;
           color: $color-white;
-          font-size: 2.8rem;
+          font-size: 1.7rem;
           letter-spacing: $letter-s-title;
         }
         p {
           text-align: center;
           color: $color-white;
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           line-height: $line-h-writing;
         }
       }
@@ -108,19 +109,23 @@
           font-size: 1.6rem;
           letter-spacing: $letter-s-base;
           input[type="radio"] {
-            margin: 0 8px 0 0;
-            width: 20px;
-            height: 20px;
+            margin: 0 8px 20px 0;
+            width: 15px;
+            height: 15px;
             background-color: $color-white;
-            border: 1px solid #ff0000;
             cursor: pointer;
           }
           label {
-            margin: 0 30px 0 0;
+            margin: 0 0 20px;
+            width: calc(100% - 23px);
           }
+        }
+        dd:not(:first-of-type) {
+          flex-wrap: wrap;
         }
         dd {
           display: flex;
+          align-items: center;
           input[type="text"],
           input[type="email"],
           input[type="tel"] {
@@ -162,8 +167,8 @@
               right: 20px;
               width: 8px;
               height: 8px;
-              border-top: 3px solid $color-base;
-              border-right: 3px solid $color-base;
+              border-top: 2px solid $color-base;
+              border-right: 2px solid $color-base;
               transform: translateY(-50%) rotate(135deg);
               pointer-events: none;
             }
@@ -188,10 +193,6 @@
           margin: 0 0 0 10px;
           text-decoration: underline;
           color: $color-btn;
-          transition: $hover-transition;
-          &:hover {
-            opacity: $hover-opacity;
-          }
         }
       }
       &--submit {
@@ -207,7 +208,6 @@
         background-color: $color-btn;
         border-radius: 0 10px 0 10px;
         box-shadow: $shadow;
-        transition: $hover-transition;
         svg {
           display: block;
           margin: 0 16px 0 0;
@@ -221,12 +221,84 @@
           display: inline-block;
           width: 40px;
           height: 8px;
-          border-bottom: 3px solid $color-white;
+          border-bottom: 2px solid $color-white;
           border-right: 3px solid $color-white;
           transform: skew(45deg);
         }
-        &:hover {
-          opacity: $hover-opacity;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  // メインコンテンツ
+  .lower {
+    &__reservation {
+      &::before {
+        top: -45px;
+        width: 300px;
+        height: 200px;
+      }
+      &::after {
+        position: absolute;
+        top: -45px;
+        width: 300px;
+        height: 200px;
+      }
+      &--title {
+        font-size: 4rem;
+        svg {
+          margin: 0 auto 20px;
+          height: 40px;
+        }
+      }
+      &--header {
+        &--title {
+          h2 {
+            font-size: 2.8rem;
+          }
+          p {
+            font-size: 1.6rem;
+          }
+        }
+      }
+      &--form {
+        &--contact {
+          &--radio {
+            input[type="radio"] {
+              margin: 0 8px 0 0;
+              width: 20px;
+              height: 20px;
+            }
+            label {
+              margin: 0 30px 0 0;
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  // メインコンテンツ
+  .lower {
+    &__reservation {
+      &--form {
+        &--check {
+          a {
+            transition: $hover-transition;
+            &:hover {
+              opacity: $hover-opacity;
+            }
+          }
+        }
+        &--submit {
+          transition: $hover-transition;
+          &:hover {
+            opacity: $hover-opacity;
+          }
         }
       }
     }

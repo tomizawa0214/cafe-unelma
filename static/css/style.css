@@ -457,8 +457,8 @@ body {
   width: 6px;
   height: 6px;
   margin: 0 12px;
-  border-top: 3px solid #5B4A23;
-  border-right: 3px solid #5B4A23;
+  border-top: 2px solid #5B4A23;
+  border-right: 2px solid #5B4A23;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -673,8 +673,8 @@ footer small {
   margin: 0 auto;
   width: 12px;
   height: 12px;
-  border-top: 3px solid #FFF;
-  border-right: 3px solid #FFF;
+  border-top: 2px solid #FFF;
+  border-right: 2px solid #FFF;
   -webkit-transform: rotate(225deg);
           transform: rotate(225deg);
 }
@@ -705,8 +705,8 @@ footer small {
   margin: 0 auto;
   width: 12px;
   height: 12px;
-  border-top: 3px solid #FFF;
-  border-right: 3px solid #FFF;
+  border-top: 2px solid #FFF;
+  border-right: 2px solid #FFF;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -1831,8 +1831,8 @@ footer small {
   display: inline-block;
   width: 8px;
   height: 8px;
-  border-top: 3px solid #109972;
-  border-right: 3px solid #109972;
+  border-top: 2px solid #109972;
+  border-right: 2px solid #109972;
   -webkit-transform: translateY(-50%) rotate(135deg);
           transform: translateY(-50%) rotate(135deg);
 }
@@ -2726,8 +2726,8 @@ footer small {
   left: 50px;
   width: 8px;
   height: 8px;
-  border-top: 3px solid #5B4A23;
-  border-right: 3px solid #5B4A23;
+  border-top: 2px solid #5B4A23;
+  border-right: 2px solid #5B4A23;
   -webkit-transform: translateY(-50%) rotate(135deg);
           transform: translateY(-50%) rotate(135deg);
   pointer-events: none;
@@ -2802,8 +2802,8 @@ footer small {
   right: 15px;
   width: 8px;
   height: 8px;
-  border-top: 3px solid #5B4A23;
-  border-right: 3px solid #5B4A23;
+  border-top: 2px solid #5B4A23;
+  border-right: 2px solid #5B4A23;
   -webkit-transform: translateY(-50%) rotate(135deg);
           transform: translateY(-50%) rotate(135deg);
   pointer-events: none;
@@ -3214,8 +3214,8 @@ footer small {
   margin: 0 auto;
   width: 12px;
   height: 12px;
-  border-top: 3px solid #5B4A23;
-  border-right: 3px solid #5B4A23;
+  border-top: 2px solid #5B4A23;
+  border-right: 2px solid #5B4A23;
   -webkit-transform: rotate(225deg);
           transform: rotate(225deg);
 }
@@ -3246,8 +3246,8 @@ footer small {
   margin: 0 auto;
   width: 12px;
   height: 12px;
-  border-top: 3px solid #5B4A23;
-  border-right: 3px solid #5B4A23;
+  border-top: 2px solid #5B4A23;
+  border-right: 2px solid #5B4A23;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -3354,8 +3354,8 @@ footer small {
   width: 6px;
   height: 6px;
   margin: 0 12px;
-  border-top: 3px solid #5B4A23;
-  border-right: 3px solid #5B4A23;
+  border-top: 2px solid #5B4A23;
+  border-right: 2px solid #5B4A23;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -3482,7 +3482,7 @@ footer small {
   display: inline-block;
   width: 40px;
   height: 8px;
-  border-bottom: 3px solid #109972;
+  border-bottom: 2px solid #109972;
   border-right: 3px solid #109972;
   -webkit-transform: skew(45deg);
           transform: skew(45deg);
@@ -3553,6 +3553,7 @@ footer small {
   position: relative;
   padding: 40px 0;
   margin: 0 auto 72px;
+  width: calc(100% - 40px);
   max-width: 1080px;
   background: rgba(255, 255, 255, 0.75);
 }
@@ -3561,10 +3562,10 @@ footer small {
   content: "";
   display: inline-block;
   position: absolute;
-  top: -45px;
-  left: -47px;
-  width: 300px;
-  height: 200px;
+  top: -25px;
+  left: -50px;
+  width: 160px;
+  height: 110px;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../img/illust_masking01.png);
@@ -3575,10 +3576,10 @@ footer small {
   content: "";
   display: inline-block;
   position: absolute;
-  top: -45px;
-  right: -96px;
-  width: 300px;
-  height: 200px;
+  top: -25px;
+  right: -50px;
+  width: 160px;
+  height: 110px;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../img/illust_masking02.png);
@@ -3587,9 +3588,8 @@ footer small {
 
 .lower__reservation--title {
   margin: 0 0 40px;
-  padding: 0 20px;
   text-align: center;
-  font-size: 4rem;
+  font-size: 2.2rem;
   font-weight: 500;
   letter-spacing: 0.05em;
   line-height: 1;
@@ -3597,8 +3597,8 @@ footer small {
 
 .lower__reservation--title svg {
   display: block;
-  margin: 0 auto 20px;
-  height: 40px;
+  margin: 0 auto 10px;
+  height: 30px;
 }
 
 .lower__reservation--header {
@@ -3624,6 +3624,7 @@ footer small {
 }
 
 .lower__reservation--header--title {
+  padding: 0 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3637,14 +3638,14 @@ footer small {
   margin: 0 0 20px;
   text-align: center;
   color: #FFF;
-  font-size: 2.8rem;
+  font-size: 1.7rem;
   letter-spacing: 0.14em;
 }
 
 .lower__reservation--header--title p {
   text-align: center;
   color: #FFF;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 2;
 }
 
@@ -3675,22 +3676,30 @@ footer small {
 }
 
 .lower__reservation--form--contact--radio input[type="radio"] {
-  margin: 0 8px 0 0;
-  width: 20px;
-  height: 20px;
+  margin: 0 8px 20px 0;
+  width: 15px;
+  height: 15px;
   background-color: #FFF;
-  border: 1px solid #ff0000;
   cursor: pointer;
 }
 
 .lower__reservation--form--contact--radio label {
-  margin: 0 30px 0 0;
+  margin: 0 0 20px;
+  width: calc(100% - 23px);
+}
+
+.lower__reservation--form--contact dd:not(:first-of-type) {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .lower__reservation--form--contact dd {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .lower__reservation--form--contact dd input[type="text"],
@@ -3740,8 +3749,8 @@ footer small {
   right: 20px;
   width: 8px;
   height: 8px;
-  border-top: 3px solid #5B4A23;
-  border-right: 3px solid #5B4A23;
+  border-top: 2px solid #5B4A23;
+  border-right: 2px solid #5B4A23;
   -webkit-transform: translateY(-50%) rotate(135deg);
           transform: translateY(-50%) rotate(135deg);
   pointer-events: none;
@@ -3774,12 +3783,6 @@ footer small {
   margin: 0 0 0 10px;
   text-decoration: underline;
   color: #109972;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.lower__reservation--form--check a:hover {
-  opacity: 0.65;
 }
 
 .lower__reservation--form--submit {
@@ -3800,8 +3803,6 @@ footer small {
   border-radius: 0 10px 0 10px;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .lower__reservation--form--submit svg {
@@ -3818,56 +3819,63 @@ footer small {
   display: inline-block;
   width: 40px;
   height: 8px;
-  border-bottom: 3px solid #FFF;
+  border-bottom: 2px solid #FFF;
   border-right: 3px solid #FFF;
   -webkit-transform: skew(45deg);
           transform: skew(45deg);
 }
 
-.lower__reservation--form--submit:hover {
-  opacity: 0.65;
+@media screen and (min-width: 768px) {
+  .lower__reservation::before {
+    top: -45px;
+    width: 300px;
+    height: 200px;
+  }
+  .lower__reservation::after {
+    position: absolute;
+    top: -45px;
+    width: 300px;
+    height: 200px;
+  }
+  .lower__reservation--title {
+    font-size: 4rem;
+  }
+  .lower__reservation--title svg {
+    margin: 0 auto 20px;
+    height: 40px;
+  }
+  .lower__reservation--header--title h2 {
+    font-size: 2.8rem;
+  }
+  .lower__reservation--header--title p {
+    font-size: 1.6rem;
+  }
+  .lower__reservation--form--contact--radio input[type="radio"] {
+    margin: 0 8px 0 0;
+    width: 20px;
+    height: 20px;
+  }
+  .lower__reservation--form--contact--radio label {
+    margin: 0 30px 0 0;
+    width: auto;
+  }
 }
 
-.lower {
-  background-color: #F2ECDD;
-  background-image: url(../img/illust_bg.png);
-  background-size: 100%;
-  overflow: hidden;
-}
-
-.lower__breadcrumbs-pc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: calc(100% -40px);
-  margin: 20px auto 50px;
-}
-
-.lower__breadcrumbs-pc li {
-  font-size: 1.2rem;
-}
-
-.lower__breadcrumbs-pc li a {
-  color: #109972;
-  text-decoration: underline;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.lower__breadcrumbs-pc li a::after {
-  content: "";
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin: 0 12px;
-  border-top: 3px solid #5B4A23;
-  border-right: 3px solid #5B4A23;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.lower__breadcrumbs-pc li a:hover {
-  opacity: 0.65;
+@media screen and (min-width: 1080px) {
+  .lower__reservation--form--check a {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .lower__reservation--form--check a:hover {
+    opacity: 0.65;
+  }
+  .lower__reservation--form--submit {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .lower__reservation--form--submit:hover {
+    opacity: 0.65;
+  }
 }
 
 .lower__access {
@@ -4240,8 +4248,8 @@ footer small {
   display: inline-block;
   width: 40px;
   height: 8px;
-  border-bottom: 3px solid #FFF;
-  border-right: 3px solid #FFF;
+  border-bottom: 2px solid #FFF;
+  border-right: 2px solid #FFF;
   -webkit-transform: skew(45deg);
           transform: skew(45deg);
 }

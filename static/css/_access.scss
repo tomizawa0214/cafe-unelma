@@ -2,36 +2,6 @@
 
 // メインコンテンツ
 .lower {
-  background-color: $color-bg;
-  background-image: url(../img/illust_bg.png);
-  background-size: 100%;
-  overflow: hidden;
-  &__breadcrumbs-pc {
-    display: flex;
-    max-width: calc(100% -40px);
-    margin: 20px auto 50px;
-    li {
-      font-size: 1.2rem;
-      a {
-        color: $color-btn;
-        text-decoration: underline;
-        transition: $hover-transition;
-        &::after {
-          content: "";
-          display: inline-block;
-          width: 6px;
-          height: 6px;
-          margin: 0 12px;
-          border-top: 3px solid $color-base;
-          border-right: 3px solid $color-base;
-          transform: rotate(45deg);
-        }
-        &:hover {
-          opacity: $hover-opacity;
-        }
-      }
-    }
-  }
   &__access {
     position: relative;
     padding: 40px 85px;
