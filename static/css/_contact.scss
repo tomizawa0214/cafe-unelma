@@ -6,16 +6,17 @@
     position: relative;
     padding: 40px 0;
     margin: 0 auto 72px;
+    width: calc(100% - 40px);
     max-width: 1080px;
     background: rgba(255, 255, 255, 0.75);
     &::before {
       content: "";
       display: inline-block;
       position: absolute;
-      top: -45px;
-      left: -47px;
-      width: 300px;
-      height: 200px;
+      top: -25px;
+      left: -50px;
+      width: 160px;
+      height: 110px;
       background-repeat: no-repeat;
       background-size: cover;
       background-image: url(../img/illust_masking01.png);
@@ -25,10 +26,10 @@
       content: "";
       display: inline-block;
       position: absolute;
-      top: -45px;
-      right: -96px;
-      width: 300px;
-      height: 200px;
+      top: -25px;
+      right: -50px;
+      width: 160px;
+      height: 110px;
       background-repeat: no-repeat;
       background-size: cover;
       background-image: url(../img/illust_masking02.png);
@@ -38,14 +39,14 @@
       margin: 0 0 40px;
       padding: 0 20px;
       text-align: center;
-      font-size: 4rem;
+      font-size: 2.2rem;
       font-weight: $fw-m;
       letter-spacing: $letter-s-en;
       line-height: 1;
       svg {
         display: block;
-        margin: 0 auto 20px;
-        height: 40px;
+        margin: 0 auto 10px;
+        height: 30px;
       }
     }
     &--form {
@@ -106,10 +107,6 @@
           margin: 0 0 0 10px;
           text-decoration: underline;
           color: $color-btn;
-          transition: $hover-transition;
-          &:hover {
-            opacity: $hover-opacity;
-          }
         }
       }
       &--submit {
@@ -125,7 +122,6 @@
         background-color: $color-btn;
         border-radius: 0 10px 0 10px;
         box-shadow: $shadow;
-        transition: $hover-transition;
         svg {
           display: block;
           margin: 0 16px 0 0;
@@ -140,11 +136,57 @@
           width: 40px;
           height: 8px;
           border-bottom: 2px solid $color-white;
-          border-right: 2px solid $color-white;
+          border-right: 3px solid $color-white;
           transform: skew(45deg);
         }
-        &:hover {
-          opacity: $hover-opacity;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  // メインコンテンツ
+  .lower {
+    &__contact {
+      &::before {
+        top: -45px;
+        width: 300px;
+        height: 200px;
+      }
+      &::after {
+        top: -45px;
+        width: 300px;
+        height: 200px;
+      }
+      &--title {
+        font-size: 4rem;
+        svg {
+          margin: 0 auto 20px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  // メインコンテンツ
+  .lower {
+    &__contact {
+      &--form {
+        &--check {
+          a {
+            transition: $hover-transition;
+            &:hover {
+              opacity: $hover-opacity;
+            }
+          }
+        }
+        &--submit {
+          transition: $hover-transition;
+          &:hover {
+            opacity: $hover-opacity;
+          }
         }
       }
     }
