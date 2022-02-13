@@ -8,7 +8,7 @@
     margin: 0 auto 72px;
     width: calc(100% - 40px);
     max-width: 1080px;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, .75);
     &::before {
       content: "";
       display: inline-block;
@@ -313,7 +313,7 @@
           margin: 20px 0 0;
           padding: 0 0 5px;
           width: 100%;
-          border-bottom: 1px solid rgba(91, 74, 35, 0.3);
+          border-bottom: 1px solid rgba(91, 74, 35, .3);
           dt {
             margin: 0 20px 0 0;
             font-size: 1.4rem;

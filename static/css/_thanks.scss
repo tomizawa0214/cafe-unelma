@@ -158,6 +158,7 @@
 .thanks {
   &__breadcrumbs-pc {
     display: flex;
+    width: calc(100% - 40px);
     max-width: 1080px;
     margin: 20px auto 50px;
     li {
@@ -165,7 +166,6 @@
       a {
         color: $color-btn;
         text-decoration: underline;
-        transition: $hover-transition;
         &::after {
           content: "";
           display: inline-block;
@@ -176,9 +176,6 @@
           border-right: 2px solid $color-base;
           transform: rotate(45deg);
         }
-        &:hover {
-          opacity: $hover-opacity;
-        }
       }
     }
   }
@@ -186,16 +183,17 @@
     position: relative;
     padding: 40px 20px;
     margin: 0 auto 72px;
+    width: calc(100% - 40px);
     max-width: 1080px;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, .75);
     &::before {
       content: "";
       display: inline-block;
       position: absolute;
-      top: -45px;
-      left: -47px;
-      width: 300px;
-      height: 200px;
+      top: -25px;
+      left: -50px;
+      width: 160px;
+      height: 110px;
       background-repeat: no-repeat;
       background-size: cover;
       background-image: url(../img/illust_masking01.png);
@@ -205,10 +203,10 @@
       content: "";
       display: inline-block;
       position: absolute;
-      top: -45px;
-      right: -96px;
-      width: 300px;
-      height: 200px;
+      top: -25px;
+      right: -50px;
+      width: 160px;
+      height: 110px;
       background-repeat: no-repeat;
       background-size: cover;
       background-image: url(../img/illust_masking02.png);
@@ -222,15 +220,15 @@
       padding: 0 20px;
       svg {
         display: block;
-        margin: 0 auto 30px;
-        height: 40px;
+        margin: 0 auto 20px;
+        height: 30px;
       }
       &--title {
         text-align: center;
-        font-size: 2.8rem;
+        font-size: 2.2rem;
         font-weight: $fw-m;
         letter-spacing: $letter-s-base;
-        line-height: 1;
+        line-height: $line-h-base;
       }
       &--txt {
         margin: 20px 0 40px;
@@ -264,7 +262,6 @@
         background-color: $color-white;
         border-radius: 0 10px 0 10px;
         box-shadow: $shadow;
-        transition: $hover-transition;
         svg {
           display: block;
           margin: 0 16px 0 0;
@@ -281,9 +278,6 @@
           border-bottom: 2px solid $color-btn;
           border-right: 3px solid $color-btn;
           transform: skew(45deg);
-        }
-        &:hover {
-          opacity: $hover-opacity;
         }
       }
     }
@@ -309,6 +303,38 @@
       }
     }
   }
+
+  // メインコンテンツ
+.thanks {
+  &__wrap {
+    &::before {
+      top: -45px;
+      width: 300px;
+      height: 200px;
+    }
+    &::after {
+      top: -45px;
+      width: 300px;
+      height: 200px;
+    }
+    &--content {
+      svg {
+        margin: 0 auto 30px;
+        height: 40px;
+      }
+      &--title {
+        font-size: 2.8rem;
+        line-height: 1;
+      }
+      &--btn {
+        svg {
+          margin: 0 16px 0 0;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
 }
 
 @media screen and (min-width: 1080px) {
@@ -362,6 +388,30 @@
                 color: $color-btn;
               }
             }
+          }
+        }
+      }
+    }
+  }
+
+  // メインコンテンツ
+  .thanks {
+    &__breadcrumbs-pc {
+      li {
+        a {
+          transition: $hover-transition;
+          &:hover {
+            opacity: $hover-opacity;
+          }
+        }
+      }
+    }
+    &__wrap {
+      &--content {
+        &--btn {
+          transition: $hover-transition;
+          &:hover {
+            opacity: $hover-opacity;
           }
         }
       }
