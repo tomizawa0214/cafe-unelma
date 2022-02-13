@@ -4,18 +4,19 @@
 .lower {
   &__access {
     position: relative;
-    padding: 40px 85px;
+    padding: 40px 20px 20px;
     margin: 0 auto 72px;
+    width: calc(100% - 40px);
     max-width: 1080px;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, .75);
     &::before {
       content: "";
       display: inline-block;
       position: absolute;
-      top: -45px;
-      left: -47px;
-      width: 300px;
-      height: 200px;
+      top: -25px;
+      left: -50px;
+      width: 160px;
+      height: 110px;
       background-repeat: no-repeat;
       background-size: cover;
       background-image: url(../img/illust_masking01.png);
@@ -25,10 +26,10 @@
       content: "";
       display: inline-block;
       position: absolute;
-      top: -45px;
-      right: -96px;
-      width: 300px;
-      height: 200px;
+      top: -25px;
+      right: -50px;
+      width: 160px;
+      height: 110px;
       background-repeat: no-repeat;
       background-size: cover;
       background-image: url(../img/illust_masking02.png);
@@ -38,24 +39,24 @@
       margin: 0 0 40px;
       padding: 0 20px;
       text-align: center;
-      font-size: 4rem;
+      font-size: 2.2rem;
       font-weight: $fw-m;
       letter-spacing: $letter-s-en;
       line-height: 1;
       svg {
         display: block;
-        margin: 0 auto 20px;
-        height: 40px;
+        margin: 0 auto 10px;
+        height: 30px;
       }
     }
     &--info {
-      display: flex;
+      display: block;
       margin: 0 0 40px;
       &--img {
         position: relative;
-        margin: 0 40px 0 0;
-        padding: 40% 0 0;
-        width: 40%;
+        margin: 0 0 20px;
+        padding: 100% 0 0;
+        width: 100%;
         img {
           position: absolute;
           top: 0;
@@ -67,15 +68,17 @@
       }
       &--content {
         h3 {
-          margin: 20px 0 10px;
-          font-size: 2.8rem;
+          display: inline-block;
+          margin: 28px 0 28px 20px;
+          font-size: 2.2rem;
           font-weight: $fw-b;
           rt {
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: $fw-m;
           }
         }
         p {
+          margin: 10px 0 0;
           font-size: 1.4rem;
           line-height: $line-h-writing;
         }
@@ -92,7 +95,7 @@
       }
     }
     &--parking {
-      padding: 20px 40px 40px;
+      padding: 20px 10px 10px;
       background-color: $color-bg;
       h3 {
         display: flex;
@@ -109,36 +112,38 @@
           background-image: url(../img/access_icon_parking.svg);
         }
       }
-      &--img {
+      &--inner {
         display: flex;
-        flex-wrap: wrap;
-        &--wrap {
-          position: relative;
-          padding: 25% 0 0;
-          width: calc((100% - 30px) / 4);
-          img {
-            position: absolute;
-            top: 0;
+        flex-direction: column-reverse;
+        &--img {
+          &--wrap {
+            position: relative;
+            padding: 100% 0 0;
             width: 100%;
-            height: 100%;
-            vertical-align: top;
-            object-fit: cover;
-          }
-          &:not(:last-of-type) {
-            margin: 0 10px 0 0;
+            img {
+              position: absolute;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              vertical-align: top;
+              object-fit: cover;
+            }
+            &:not(:last-of-type) {
+              margin: 0 0 10px 0;
+            }
           }
         }
-      }
-      p {
-        margin: 10px 0 0;
-        font-size: 1.4rem;
+        p {
+          margin: 0 0 10px;
+          font-size: 1.4rem;
+        }
       }
     }
   }
   &__map {
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 500px;
     &::after {
       content: "";
       position: absolute;
@@ -146,7 +151,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 800px;
+      height: 500px;
       background: rgba(91, 74, 35, 0.2);
       pointer-events: none;
     }
@@ -157,18 +162,86 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  // メインコンテンツ
+  .lower {
+    &__access {
+      &::before {
+        top: -45px;
+        width: 300px;
+        height: 200px;
+      }
+      &::after {
+        top: -45px;
+        width: 300px;
+        height: 200px;
+      }
+      &--title {
+        font-size: 4rem;
+        svg {
+          margin: 0 auto 20px;
+          height: 40px;
+        }
+      }
+      &--info {
+        display: flex;
+        &--img {
+          margin: 0 20px 0 0;
+          padding: 40% 0 0;
+          width: 40%;
+        }
+        &--content {
+          h3 {
+            display: block;
+            margin: 20px 0 10px;
+            font-size: 2.8rem;
+            rt {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+      &--parking {
+        &--inner {
+          flex-direction: column;
+          &--img {
+            display: flex;
+            flex-wrap: wrap;
+            &--wrap {
+              padding: 25% 0 0;
+              width: calc((100% - 30px) / 4);
+              &:not(:last-of-type) {
+                margin: 0 10px 0 0;
+              }
+            }
+          }
+          p {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    &__map {
+      height: 800px;
+      &::after {
+        height: 800px;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 1080px) {
   // メインコンテンツ
   .lower {
-    &__breadcrumbs-pc {
-      max-width: 1080px;
-      li {
-        a {
-          transition: $hover-transition;
-          &:hover {
-            opacity: $hover-opacity;
-          }
+    &__access {
+      padding: 40px 85px;
+      &--info {
+        &--img {
+          margin: 0 40px 0 0;
         }
+      }
+      &--parking {
+        padding: 20px 40px 40px;
       }
     }
   }
