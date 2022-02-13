@@ -97,6 +97,16 @@ footer {
   }
 }
 
+.sp-br {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .sp-br {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1080px) {
   // メインコンテンツ
   .lower {
@@ -112,4 +122,8 @@ footer {
       }
     }
   }
+
+  // .sp-br {
+  //   display: none;
+  // }
 }
